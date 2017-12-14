@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ViewPagerCards.iml" filepath="$PROJECT_DIR$/ViewPagerCards.iml" />
-      <module fileurl="file://C:\Users\Ishaq Hassan\Desktop\ViewPagerCards\ViewPagerCards.iml" filepath="C:\Users\Ishaq Hassan\Desktop\ViewPagerCards\ViewPagerCards.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Ishaq Hassan\Desktop\ViewPagerCards\app\app.iml" filepath="C:\Users\Ishaq Hassan\Desktop\ViewPagerCards\app\app.iml" />
     </modules>
   </component>
 </project>
