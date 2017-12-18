@@ -9,12 +9,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 
 public class CardFragment extends Fragment {
 
     private CardView cardView;
+
 
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container,
@@ -23,6 +29,10 @@ public class CardFragment extends Fragment {
 
         cardView = (CardView) view.findViewById(R.id.cardView);
         cardView.setMaxCardElevation(cardView.getCardElevation() * CardAdapter.MAX_ELEVATION_FACTOR);
+
+        ImageView itemImage = view.findViewById(R.id.itemImage);
+
+        Glide.with(getContext()).load(getArguments().getString("bigImage")).transition(withCrossFade()).into(itemImage);
 
         final TextView title = (TextView) view.findViewById(R.id.title);
         final TextView details = (TextView) view.findViewById(R.id.details);
